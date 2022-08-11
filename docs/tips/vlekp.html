@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ggplot101_01a_ans</title>
+  <title>ggplot101_01b_ans</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <style>
@@ -38,7 +38,7 @@ pre {
 <div>
 <pre>
 ggplot(data = penguins,
-       mapping = aes(x = bill_depth_mm, y = body_mass_g)) +
+       mapping = aes(x = bill_depth_mm, y = body_mass_g, color = species, shape = species)) +
   geom_point()
 </pre>
 </div>

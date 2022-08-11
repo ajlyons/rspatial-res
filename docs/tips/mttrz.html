@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ggplot101_01a_ans</title>
+  <title>ggplot101_02_ans</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <style>
@@ -36,10 +36,10 @@ pre {
 <p class="caption">Answer:</p>
 
 <div>
-<pre>
-ggplot(data = penguins,
-       mapping = aes(x = bill_depth_mm, y = body_mass_g)) +
-  geom_point()
+<pre>ggplot(data = penguins,
+       mapping = aes(x = flipper_length_mm)) +
+  geom_histogram() +
+  facet_wrap(~species)
 </pre>
 </div>
 
